@@ -16,15 +16,23 @@
 				<key>background</key>
 				<string>#EBEEF5</string>
 				<key>caret</key>
-				<string>#F8F8F0</string>
+				<string>#FC8357</string>
 				<key>foreground</key>
 				<string>#5D5D5F</string>
-				<key>invisibles</key>
-				<string>#3B3A32</string>
 				<key>lineHighlight</key>
 				<string>#E3E6ED</string>
 				<key>selection</key>
 				<string>#0065FF3F</string>
+				<key>findHighlight</key>
+				<string>#F8F900</string>
+				<key>findHighlightForeground</key>
+				<string>#CFD2D9</string>
+				<key>selectionBorder</key>
+				<string>#0065FF00</string>
+				<key>activeGuide</key>
+				<string>#FC8357CC</string>
+				<key>bracketsOptions</key>
+				<string>underline</string>
 			</dict>
 		</dict>
 
@@ -32,7 +40,7 @@
 		<key>name</key>
 		<string>variable.parameter</string>
 		<key>scope</key>
-		<string>variable.parameter</string>
+		<string>variable.parameter,token.variable.parameter,variable.other.jsdoc,variable.language.arguments,function.parameter,entity.name.variable.parameter,meta.function.c, punctuation.vararg-ellipses,variable.other.block.ruby, meta.arguments</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -44,9 +52,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>variable.other.less,variable.other.sass,keyframe-list</string>
+		<string>variable.other.less,variable.other.sass,keyframe-list;sass,less里的变量;css3里的关键帧</string>
 		<key>scope</key>
-		<string></string>
+		<string>variable.other.less,variable.other.sass,variable.scss,meta.function.calc.css, source.sass variable.other</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -58,9 +66,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>variable.parameter</string>
+		<string>variable.parameter;css里url文件引用的链接</string>
 		<key>scope</key>
-		<string></string>
+		<string>variable.parameter.url.css</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -72,9 +80,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>module</string>
+		<string>module;模块</string>
 		<key>scope</key>
-		<string></string>
+		<string>variable.other.readwrite.alias, entity.name.type.module,entity.name.package</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -86,9 +94,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>Variable</string>
+		<string>Variable;变量</string>
 		<key>scope</key>
-		<string>variable.other,support.variable,variable</string>
+		<string>variable.other, support.variable,meta.definition.variable,variable.other.object,variable.other.readwrite, entity.name.type.enum,meta.method.body,entity.name.variable,variable.other.object.property.cs,meta.block.c,source.c,source.cpp,source.ruby,source.go,meta.class-struct-block,source.dart,source.python,meta.item-access.python,meta.function-call.arguments.python,meta.item-access.arguments.python, variable.parameter.keyframe-list.css, meta.property-value.css, source.css.less, variable,meta.binding.destructuring.mapping.js, meta.object-literal.key.js, meta.binding.name.js, variable.other.readwrite.js,meta.qualified-name.python</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -100,9 +108,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>comment</string>
+		<string>comment;注释</string>
 		<key>scope</key>
-		<string>comment,punctuation.definition.comment</string>
+		<string>comment,comment.markup.link,punctuation.definition.comment,markup.quote.markdown</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -114,7 +122,7 @@
 
 	<dict>
 		<key>name</key>
-		<string>Illegal</string>
+		<string>Illegal;无效的</string>
 		<key>scope</key>
 		<string>invalid</string>
 		<key>settings</key>
@@ -128,9 +136,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>Unimplemented</string>
+		<string>Unimplemented;未生效的</string>
 		<key>scope</key>
-		<string></string>
+		<string>invalid.unimplemented</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -142,9 +150,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>Punctuation accessor</string>
+		<string>Punctuation accessor 点号 .</string>
 		<key>scope</key>
-		<string></string>
+		<string>punctuation.accessor,punctuation.separator.period,punctuation.separator.dot-access,punctuation.separator.method,punctuation.other.period,punctuation.dot,  meta.delimiter.property.period</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -156,9 +164,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>meta.parameters;scope</string>
+		<string>meta.parameters;scope值不规则的点. 引号</string>
 		<key>scope</key>
-		<string></string>
+		<string>meta.parameters.js</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -170,9 +178,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>Punctuation colon</string>
+		<string>Punctuation colon 冒号 :</string>
 		<key>scope</key>
-		<string>punctuation.definition.parameters</string>
+		<string>punctuation.separator.key-value, keyword.operator.type.annotation,punctuation.definition.section.case-statement,punctuation.separator.colon,punctuation.separator.other,punctuation.definition.parameters,punctuation.definition.constant.ruby,punctuation.separator.dictionary.key-value, keyword.operator.ternary.dart,punctuation.section.function.begin.python, meta.property-list.css.sass, sass-script-maps, punctuation.colon</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -184,9 +192,9 @@
 
 	<dict>
 		<key>name</key>
+		<string>keyword.operator.key.php;PHP里的 => 类似JS里的对象里的冒号:</string>
+		<key>scope</key>
 		<string>keyword.operator.key.php</string>
-		<key>scope</key>
-		<string></string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -198,9 +206,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>Punctuation comma</string>
+		<string>Punctuation comma 逗号 ,</string>
 		<key>scope</key>
-		<string></string>
+		<string>punctuation.separator.comma,punctuation.separator.delimiter,punctuation.separator.list.comma,punctuation.separator.parameter, meta.array.php, punctuation.separator.parameters,punctuation.separator.arguments.python,punctuation.separator.object,meta.function.method.with-arguments.ruby, punctuation.comma, punctuation.separator.element.python, comment.punctuation.comma.sass, meta.at-rule.keyframes.body.css, meta.delimiter.object.comma</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -212,9 +220,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>Punctuation Terminator</string>
+		<string>Punctuation Terminator 分号 ;</string>
 		<key>scope</key>
-		<string></string>
+		<string>punctuation.terminator,punctuation.terminator.statement, punctuation.terminator.rule, punctuation.terminator.expression,punctuation.separator.statement,meta.using-namespace-declaration.cpp,invalid.deprecated.semicolon, constant.character.end</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -226,9 +234,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>Function Call Variable</string>
+		<string>Function Call Variable;用户自定义的变量属性(发现innerHTML也被包含在内, 所以这条暂不能区分用户自定义 与 语言内置对象属性)</string>
 		<key>scope</key>
-		<string></string>
+		<string>variable.other.object.property,variable.other.constant.property</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -240,9 +248,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>Function Call Variable</string>
+		<string>Function Call Variable;对象属性名</string>
 		<key>scope</key>
-		<string></string>
+		<string>variable.other.object.property,variable.other.constant.property</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -254,9 +262,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>font-name</string>
+		<string>font-name;css里字体 如 微软雅黑</string>
 		<key>scope</key>
-		<string></string>
+		<string>support.constant.font-name</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -268,9 +276,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>support.constant.property-value.scss</string>
+		<string>support.constant.property-value.scss;css属性值常量 block inline inline-block none solid等</string>
 		<key>scope</key>
-		<string></string>
+		<string>support.constant.property-value.scss,support.constant.property-value.css,support.constant.vendored.property-value.css</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -282,9 +290,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>js template-expression</string>
+		<string>js template-expression;模板字符串里的${}</string>
 		<key>scope</key>
-		<string></string>
+		<string>punctuation.definition.template-expression.begin,punctuation.definition.template-expression.end</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -296,9 +304,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>js object-literal.key</string>
+		<string>js object-literal.key;对象属性名 js和ts不一样,可选属性符号?</string>
 		<key>scope</key>
-		<string></string>
+		<string>meta.object-literal.key, meta.object-literal.key string.quoted,variable.object.property,keyword.operator.optional,support.type.map.key,meta.at-rule.each.scss,meta.property-value.scss</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -312,7 +320,7 @@
 		<key>name</key>
 		<string>regexp ^ ?: $ +</string>
 		<key>scope</key>
-		<string></string>
+		<string>keyword.operator.negetion.regexp,keyword.control.anchor.regexp,punctuation.definition.group.capture.regexp,keyword.operator.quantifier.regexp</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -324,9 +332,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>js dom variable, C C++ C# namespace</string>
+		<string>js dom variable, C C++ C# namespace;dom, C系语言的命名空间</string>
 		<key>scope</key>
-		<string></string>
+		<string>support.variable.dom,support.variable.property,support.variable.property.dom,storage.modifier.import,constant.other.php,variable.other.object.cs,entity.name.type.namespace,variable.other.member.c,meta.using-namespace-declaration.cpp entity.name.type.cpp,meta.class-struct-block.cpp meta.namespace-block.cpp entity.name.type.cpp, variable.other.source.dart</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -338,7 +346,7 @@
 
 	<dict>
 		<key>name</key>
-		<string>Punctuation Definition Comment</string>
+		<string>Punctuation Definition Comment;注释的定义符号 // /* */</string>
 		<key>scope</key>
 		<string>punctuation.definition.comment</string>
 		<key>settings</key>
@@ -354,7 +362,7 @@
 		<key>name</key>
 		<string>typeof</string>
 		<key>scope</key>
-		<string></string>
+		<string>keyword.operator.expression.typeof,keyword.other.typeof</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -366,9 +374,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>keyword Operators assignment</string>
+		<string>keyword Operators assignment;等号 = (不包括HTML标签里的=号, 把+= -=包含进来了,然后单独设)</string>
 		<key>scope</key>
-		<string></string>
+		<string>keyword.operator.assignment.python,keyword.operator.assignment.augmented.python</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -380,9 +388,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>punctuation</string>
+		<string>punctuation;html标签</string>
 		<key>scope</key>
-		<string>punctuation.definition.tag</string>
+		<string>punctuation.definition.tag,punctuation.separator.key-value.html</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -394,9 +402,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>keyword Operators increment decrement</string>
+		<string>keyword Operators increment decrement;关键字 运算符 + - * /;自增++ 自减--;+= -=;less sass里的关键字(用于+ -号)</string>
 		<key>scope</key>
-		<string>keyword.operator</string>
+		<string>keyword.operator, keyword.operator.arithmetic,keyword.operator.decrement, keyword.operator.increment,keyword.operator.assignment.compound,keyword.operator.less,meta.property-list.css,keyword.operator.sass, keyword.operator.increment-decrement, keyword.operator.css, entity.name.tag.wildcard.scss, keyword.operator.string,keyword.operator.bitwise,keyword.operator.assignment.augmented,storage.type.variable.ruby, keyword.operator.assignment.arithmetic, punctuation.definition.list.begin.markdown, variable.language.import-all, constant.language.import-export-all, constant.language.import-all.python</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -408,9 +416,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>string operator in php</string>
+		<string>string operator in php;php的string操作符 .(主要为了这个点加粗) .=(这个被迫加粗 需要提issue将二者区分)</string>
 		<key>scope</key>
-		<string></string>
+		<string>keyword.operator.string.php</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -424,7 +432,7 @@
 		<key>name</key>
 		<string>keyword Operators ternary,logical,comparison,relational,tilde</string>
 		<key>scope</key>
-		<string></string>
+		<string>keyword.operator.ternary,keyword.operator.logical,keyword.operator.comparison,keyword.operator.relational,keyword.operator.or.regexp,keyword.operator.class,keyword.operator.type,keyword.operator.other.ruby,keyword.operator.conditional,punctuation.separator.question-mark,keyword.operator.null-coalescing,punctuation.tilde,punctuation.separator.pointer-access,punctuation.separator.namespace, keyword.operator.dart</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -450,9 +458,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>Functions,pthread</string>
+		<string>Functions,pthread;单独的函数,C++线程</string>
 		<key>scope</key>
-		<string>entity.name.function</string>
+		<string>entity.name.function,support.type.pthread, variable.function.js,meta.function-call.js,variable.annotation.function.python,meta.annotation.python,punctuation.definition.annotation.python</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -466,7 +474,7 @@
 		<key>name</key>
 		<string>support.function</string>
 		<key>scope</key>
-		<string>support.function,meta.function-call</string>
+		<string>support.function,meta.function-call,support.function.construct.output,invalid.deprecated.gradient.function.css,invalid.deprecated.function.css,meta.function-call.python,punctuation.section.arguments.begin.python,variable.function.python</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -480,7 +488,7 @@
 		<key>name</key>
 		<string>support.function.console</string>
 		<key>scope</key>
-		<string></string>
+		<string>support.function.console</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -494,7 +502,7 @@
 		<key>name</key>
 		<string>support.function.dom</string>
 		<key>scope</key>
-		<string></string>
+		<string>support.function.dom</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -506,9 +514,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>global variable in PHP</string>
+		<string>global variable in PHP;PHP里的超全局变量</string>
 		<key>scope</key>
-		<string></string>
+		<string>variable.other.global.safer.php,variable.other.global.php</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -522,7 +530,7 @@
 		<key>name</key>
 		<string>url.css,rgb(),transform,calc</string>
 		<key>scope</key>
-		<string></string>
+		<string>support.function.any-method.builtin.url,support.function.any-method.builtin,support.function.url,support.function.misc,support.function.transform,support.function.calc,support.function.var,support.function.string,support.function.basic_functions,support.function.array,support.function.construct,support.function.datetime,support.function.file,support.function.network,support.function.session,support.function.mail,support.function.filter,support.function.errorfunc,support.function.mysql,support.function.php_odbc,support.function.xml,support.function.math</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -536,7 +544,7 @@
 		<key>name</key>
 		<string>support.class.builtin</string>
 		<key>scope</key>
-		<string></string>
+		<string>support.class.builtin</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -550,7 +558,7 @@
 		<key>name</key>
 		<string>Classes</string>
 		<key>scope</key>
-		<string>entity.name.type.class</string>
+		<string>entity.name.type.class,entity.name.class.python</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -576,9 +584,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>support.class.console,support.class.component</string>
+		<string>support.class.console,support.class.component;console输出台,react组件</string>
 		<key>scope</key>
-		<string></string>
+		<string>support.class.console,support.class.component</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -606,7 +614,7 @@
 		<key>name</key>
 		<string>declaration</string>
 		<key>scope</key>
-		<string></string>
+		<string>meta.method.declaration</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -618,9 +626,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>arrow</string>
+		<string>arrow;箭头函数</string>
 		<key>scope</key>
-		<string></string>
+		<string>storage.type.function.arrow</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -634,7 +642,7 @@
 		<key>name</key>
 		<string>new</string>
 		<key>scope</key>
-		<string></string>
+		<string>keyword.operator.new,keyword.other.new, storage.modifier.c, keyword.control.directive.define, keyword.control.def, keyword.control.class, keyword.control.directive.define punctuation.definition.directive, keyword.control.module, keyword.control.new,keyword.preprocessor.define, meta.preprocessor.cs punctuation.separator.hash.cs</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -648,7 +656,7 @@
 		<key>name</key>
 		<string>in of</string>
 		<key>scope</key>
-		<string></string>
+		<string>keyword.operator.expression.in,keyword.operator.expression.of</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -662,7 +670,7 @@
 		<key>name</key>
 		<string>Keyword Control,Using</string>
 		<key>scope</key>
-		<string>keyword.control</string>
+		<string>keyword.control,keyword.other.using,keyword.preprocessor.elif,keyword.preprocessor.if,keyword.preprocessor.else,keyword.preprocessor.endif,storage.modifier.extends,keyword.control.directive,punctuation.definition.directive,punctuation.separator.hash,storage.type.modifier, keyword.control.export, keyword.operator.expression.delete, keyword.control.import,keyword.control.at-rule.import.css,keyword.control.at-rule.import.less,keyword.control.at-rule.import.sass,keyword.other.import,keyword.import,keyword.package, keyword.control.flow,keyword.other.special-method.ruby, keyword.input, keyword.type.graphql,keyword.operator.logical.python</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -676,7 +684,7 @@
 		<key>name</key>
 		<string>CSS from to, js from</string>
 		<key>scope</key>
-		<string></string>
+		<string>keyword.control.from,entity.other.keyframe-offset</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -690,7 +698,7 @@
 		<key>name</key>
 		<string>Keyword: return(flow), interface</string>
 		<key>scope</key>
-		<string>storage.modifier</string>
+		<string>keyword.other.package,keyword.other.class,keyword.other.namespace,keyword.other.enum,keyword.other.operator-decl,keyword.other.interface,keyword.preprocessor,keyword.other.delegate,storage.type.cpp,storage.type.namespace, storage.modifier, storage.type.modifier.cpp</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -704,7 +712,7 @@
 		<key>name</key>
 		<string>default</string>
 		<key>scope</key>
-		<string></string>
+		<string>keyword.control.default</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -716,9 +724,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>support type ts</string>
+		<string>support type ts;ts里默认数据类型;自定义数据类型</string>
 		<key>scope</key>
-		<string></string>
+		<string>support.type.primitive,support.type.builtin,entity.name.type.instance,entity.name.type.alias.ts,storage.type.string,storage.type.numeric,storage.type.boolean,storage.type.primitive,meta.type.annotation,meta.method.identifier,keyword.type,storage.type.cs,entity.name.type.type-parameter,meta.type.parameters,storage.type.generic,storage.type.object.array,storage.type.java,storage.type.c,support.class.dart,meta.declaration.dart, meta.type.declaration, meta.block.ts, support.type.graphql</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -732,7 +740,7 @@
 		<key>name</key>
 		<string>inherited-class;interface</string>
 		<key>scope</key>
-		<string>entity.other.inherited-class</string>
+		<string>entity.other.inherited-classentity.name.type.interface,meta.return.type,keyword.interface,entity.name.type.interface,entity.other.inherited-class,entity.name.type.struct,entity.name.type.delegate, meta.class-struct-block.cpp entity.name.type.cpp</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -744,9 +752,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>type name</string>
+		<string>type name;构造函数</string>
 		<key>scope</key>
-		<string></string>
+		<string>entity.name.type.js,new.expr.ts</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -760,7 +768,7 @@
 		<key>name</key>
 		<string>Strings</string>
 		<key>scope</key>
-		<string>string</string>
+		<string>string, punctuation.definition.string.begin.html, punctuation.definition.string.end.html</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -772,9 +780,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>Constant</string>
+		<string>Constant;语言常量,包含 true false null undefined等; void</string>
 		<key>scope</key>
-		<string>constant.language</string>
+		<string>constant.language,constant.language.boolean,keyword.operator.expression.void</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -786,9 +794,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>number,unit,constant,Math,enum</string>
+		<string>number,unit,constant,Math,enum;数字;单位;值为数字的常量;Math对象;enum枚举里的元素</string>
 		<key>scope</key>
-		<string>constant.numeric,keyword.other.unit</string>
+		<string>constant.numeric,keyword.other.unit,support.constant.dom,constant.other.character-class.regexp,support.constant.math,support.constant.property.math,support.constant.ext,support.constant.core, variable.other.enummember, constant.other.enum, entity.name.variable.enum-member,entity.name.function.preprocessor.c, entity.other.keyframe-offset.percentage.css,variable.other.constant, constant.other.js</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -800,9 +808,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>id,symbol in C#</string>
+		<string>id,symbol in C#;HTML行间的id和CSS里的id名;C#中预处理器指令创建符号常量</string>
 		<key>scope</key>
-		<string>entity.other.attribute-name.id</string>
+		<string>meta.attribute.id.html entity.other.attribute-name.html, entity.other.attribute-name.id, entity.name.variable.preprocessor.symbol</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -814,9 +822,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>markup bold</string>
+		<string>markup bold;Markdown里的bold</string>
 		<key>scope</key>
-		<string></string>
+		<string>markup.bold.markdown, punctuation.definition.bold.markdown</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -828,9 +836,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>punctuation.definition.markdown</string>
+		<string>punctuation.definition.markdown;Markdown里引用块符号 ```</string>
 		<key>scope</key>
-		<string></string>
+		<string>punctuation.definition.markdown</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -842,9 +850,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>beginning.punctuation.definition.quote.markdown</string>
+		<string>beginning.punctuation.definition.quote.markdown;Markdown里引用块符号 ></string>
 		<key>scope</key>
-		<string></string>
+		<string>punctuation.definition.markdown</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -856,9 +864,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>fenced_code.block.language</string>
+		<string>fenced_code.block.language;Markdown里引用语言声明</string>
 		<key>scope</key>
-		<string></string>
+		<string>fenced_code.block.language</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -872,7 +880,7 @@
 		<key>name</key>
 		<string>Tags;HTML的标签名</string>
 		<key>scope</key>
-		<string>entity.name.tag</string>
+		<string>entity.name.tag,punctuation.section.embedded.begin.php,punctuation.section.embedded.end.php</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -884,9 +892,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>text</string>
+		<string>text;HTML标签里的文字;Markdown里书写的普通文字</string>
 		<key>scope</key>
-		<string></string>
+		<string>text.html.basic,text.html.markdown,meta.paragraph.markdown,text.html.php,text.html.derivative, text.html.wxml, text.xml, text.html, source.js, source.ignore, source.nginx</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -898,9 +906,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>meta.jsx.children</string>
+		<string>meta.jsx.children;jsx里的文字</string>
 		<key>scope</key>
-		<string></string>
+		<string>meta.jsx.childre</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -912,9 +920,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>block,embedded,definition,bracket,typeparameters</string>
+		<string>block,embedded,definition,bracket,typeparameters;大括号 {}, 中括号[], 圆括号(), 尖括号</string>
 		<key>scope</key>
-		<string></string>
+		<string>punctuation.section.block.begin.bracket,punctuation.section.block.end.bracket,punctuation.definition.block,punctuation.section.embedded.begin,punctuation.section.embedded.end,meta.brace,punctuation.bracket,punctuation.definition.parameters.ruby,punctuation.definition.parameters.begin,punctuation.definition.parameters.end,punctuation.section.function.begin.bracket,punctuation.section.function.end.bracket,punctuation.definition.typeparameters.begin,punctuation.definition.typeparameters.end, punctuation.section.array.end, punctuation.section.array.begin, punctuation.definition.array.end, punctuation.definition.array.begin, punctuation.section.scope.end, punctuation.section.scope.begin, meta.parameter.object-binding-pattern, punctuation.definition.binding-pattern.object,punctuation.definition.arguments.end,punctuation.definition.arguments.begin,punctuation.definition.begin.bracket,punctuation.definition.end.bracket,punctuation.curlybrace.open,punctuation.curlybrace.close,punctuation.parenthesis.open,punctuation.parenthesis.close,punctuation.squarebracket.open,,punctuation.squarebracket.close,punctuation.section.method.begin,punctuation.section.method.end,punctuation.section.class.begin,punctuation.section.class.end,punctuation.section.enum.begin,punctuation.section.enum.end,punctuation.section.parameters.begin.bracket,punctuation.section.parameters.end.bracket,punctuation.section.parens.begin.bracket,punctuation.section.parens.end.bracket,punctuation.section.arguments.begin.bracket,punctuation.section.arguments.end.bracket,punctuation.separator.arguments,punctuation.section.function.ruby,punctuation.definition.dictionary.begin,punctuation.definition.dictionary.end,punctuation.separator.dictionary.pair,punctuation.separator.array,punctuation.definition.map.begin.bracket,punctuation.definition.map.end.bracket,punctuation.section.function, punctuation.definition.parameters.end.bracket, punctuation.definition.parameters.begin.bracket,punctuation.section.property-list.begin.bracket,punctuation.section.property-list.end.bracket,punctuation.definition.list.begin,punctuation.definition.list.end,punctuation.definition.binding-pattern.array, punctuation.section.embedded.end.ruby source.ruby, punctuation.section.embedded.begin.ruby source.ruby, source.cs, punctuation.definition.generic.begin.html, punctuation.definition.generic.end.html, punctuation.definition.function.body.begin.bracket, punctuation.definition.function.body.end.bracket, punctuation.definition.modules.begin, punctuation.definition.modules.end, constant.character.brace, punctuation.operation.graphql</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -926,9 +934,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>curly</string>
+		<string>curly;CSS里的括号 {} ()</string>
 		<key>scope</key>
-		<string></string>
+		<string>meta.brace.round.css,punctuation.section.property-list.begin.bracket.curly.css,punctuation.section.property-list.end.bracket.curly.css,punctuation.section.function.begin.bracket.round.css,punctuation.section.function.end.bracket.round.css,punctuation.section.media.begin.bracket.curly.css,punctuation.section.media.end.bracket.curly.css,punctuation.definition.parameters.begin.bracket.round.css,punctuation.definition.parameters.end.bracket.round.css,punctuation.section.keyframes.begin.bracket.curly.css,punctuation.section.keyframes.end.bracket.curly.css</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -940,9 +948,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>css color standard name</string>
+		<string>css color standard name;css 颜色名词 red orange pink plum 等</string>
 		<key>scope</key>
-		<string></string>
+		<string>support.constant.color.w3c-standard-color-name,support.constant.color.w3c-extended-color-name,constant.other.color.rgb-value.hex,constant.other.rgb-value, support.constant.color.w3c-extended-color-name.css</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -954,9 +962,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>css Support type</string>
+		<string>css Support type;css less sass属性名 如果不填就与support.type同色</string>
 		<key>scope</key>
-		<string></string>
+		<string>support.type.property-name.css,support.type.vendored.property-name.css,meta.at-rule.each.scss support.constant.property-value.css, source.css.scss</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -968,9 +976,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>property-list</string>
+		<string>property-list;css里未写完整的属性名</string>
 		<key>scope</key>
-		<string></string>
+		<string>meta.property-name.css</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -984,7 +992,7 @@
 		<key>name</key>
 		<string>Attributes</string>
 		<key>scope</key>
-		<string>entity.other.attribute-name</string>
+		<string>entity.other.attribute-name,invalid.deprecated.entity.other.attribute-name</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -996,9 +1004,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>class.mixin</string>
+		<string>class.mixin;less sass里的自定义的代码块名 类似函数</string>
 		<key>scope</key>
-		<string></string>
+		<string>entity.other.attribute-name.class.mixin</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -1010,9 +1018,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>Attribute class</string>
+		<string>Attribute class;css里的class名 和 & </string>
 		<key>scope</key>
-		<string></string>
+		<string>entity.other.attribute-name.class.css,selector.sass,entity.other.attribute-name.parent-selector.css, meta.at-rule.extend.scss</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -1024,9 +1032,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>pseudo-class</string>
+		<string>pseudo-class;css里的伪类 hover等 和 伪类选择器 如nth-child()</string>
 		<key>scope</key>
-		<string></string>
+		<string>entity.other.attribute-name.pseudo-class.css,support.type.property-name.media.css,support.constant.media.css</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -1038,9 +1046,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>pseudo-element</string>
+		<string>pseudo-element;css里的伪元素 before after</string>
 		<key>scope</key>
-		<string></string>
+		<string>entity.other.attribute-name.pseudo-element.css</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -1066,7 +1074,7 @@
 
 	<dict>
 		<key>name</key>
-		<string>Italic</string>
+		<string>Italic;Markdown里的斜体字</string>
 		<key>scope</key>
 		<string>markup.italic,punctuation.definition.italic</string>
 		<key>settings</key>
@@ -1136,7 +1144,7 @@
 
 	<dict>
 		<key>name</key>
-		<string>Regular Expressions</string>
+		<string>Regular Expressions;正则表达式</string>
 		<key>scope</key>
 		<string>string.regexp</string>
 		<key>settings</key>
@@ -1150,7 +1158,7 @@
 
 	<dict>
 		<key>name</key>
-		<string>Regular keyword i g</string>
+		<string>Regular keyword i g;正则表达式关键字 如 i g"</string>
 		<key>scope</key>
 		<string>keyword.other</string>
 		<key>settings</key>
@@ -1164,7 +1172,7 @@
 
 	<dict>
 		<key>name</key>
-		<string>Escape Characters</string>
+		<string>Escape Characters;转义符 \\</string>
 		<key>scope</key>
 		<string>constant.character.escape</string>
 		<key>settings</key>
@@ -1178,7 +1186,7 @@
 
 	<dict>
 		<key>name</key>
-		<string>Illegal</string>
+		<string>Illegal;非法的</string>
 		<key>scope</key>
 		<string>invalid.illegal</string>
 		<key>settings</key>
@@ -1192,9 +1200,9 @@
 
 	<dict>
 		<key>name</key>
-		<string>Illegal</string>
+		<string>Illegal;非法的</string>
 		<key>scope</key>
-		<string></string>
+		<string>invalid.illegal.expected-dictionary-separator.json</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -1208,7 +1216,7 @@
 		<key>name</key>
 		<string>Broken</string>
 		<key>scope</key>
-		<string></string>
+		<string>invalid.broken</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -1220,7 +1228,7 @@
 
 	<dict>
 		<key>name</key>
-		<string>Deprecated</string>
+		<string>Deprecated;不赞成的</string>
 		<key>scope</key>
 		<string>invalid.deprecated</string>
 		<key>settings</key>
@@ -1236,7 +1244,7 @@
 		<key>name</key>
 		<string>Source Json Meta Structure Dictionary Json > String Quoted Json</string>
 		<key>scope</key>
-		<string></string>
+		<string>source.json meta.structure.dictionary.json > string.quoted.json</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -1250,7 +1258,7 @@
 		<key>name</key>
 		<string>Source Json Meta Structure Dictionary Json > Value Json > String Quoted Json,source Json Meta Structure Array Json > Value Json > String Quoted Json,source Json Meta Structure Dictionary Json > Value Json > String Quoted Json > Punctuation,source Json Meta Structure Array Json > Value Json > String Quoted Json > Punctuation</string>
 		<key>scope</key>
-		<string></string>
+		<string>source.json meta.structure.dictionary.json > value.json > string.quoted.json,source.json meta.structure.array.json > value.json > string.quoted.json,source.json meta.structure.dictionary.json > value.json > string.quoted.json > punctuation,source.json meta.structure.array.json > value.json > string.quoted.json > punctuation</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -1278,7 +1286,7 @@
 		<key>name</key>
 		<string>js ts this super, python self</string>
 		<key>scope</key>
-		<string></string>
+		<string>variable.language.python</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -1292,7 +1300,7 @@
 		<key>name</key>
 		<string>token.info-token</string>
 		<key>scope</key>
-		<string></string>
+		<string>token.info-token</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -1306,7 +1314,7 @@
 		<key>name</key>
 		<string>token.error-token</string>
 		<key>scope</key>
-		<string></string>
+		<string>token.error-token</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -1320,7 +1328,7 @@
 		<key>name</key>
 		<string>token.warn-token</string>
 		<key>scope</key>
-		<string></string>
+		<string>token.warn-token</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -1334,7 +1342,7 @@
 		<key>name</key>
 		<string>token.debug-token</string>
 		<key>scope</key>
-		<string></string>
+		<string>token.debug-token</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -1348,7 +1356,7 @@
 		<key>name</key>
 		<string>keyword</string>
 		<key>scope</key>
-		<string></string>
+		<string>meta.var.expr,storage.type.function,keyword.function,keyword.var,keyword.const,keyword.channel,keyword.struct,keyword.other.struct,keyword.map,keyword.reserved,storage.type.class,storage.type.php,storage.type.interface,storage.type.object,storage.type.primitive.dart, keyword.declaration, keyword.operator.closure.dart, storage.type.enum, storage.type.type,storage.type.js,keyword.control.at-rule.function,keyword.control.at-rule.mixin, storage.type.const</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -1362,7 +1370,7 @@
 		<key>name</key>
 		<string>punctuation.definition.block.tag.jsdoc,storage.type.class.jsdoc</string>
 		<key>scope</key>
-		<string></string>
+		<string>punctuation.definition.block.tag.jsdoc,storage.type.class.jsdoc,keyword.ccontrol.at-rule.keyframes.css,keyword.control.at-rule.keyframes.css</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -1376,7 +1384,7 @@
 		<key>name</key>
 		<string>js module</string>
 		<key>scope</key>
-		<string></string>
+		<string>support.module.node.js,support.type.object.module.js,support.type.object.module.ts,support.module.node.ts</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -1392,10 +1400,8 @@
 	<key>colorSpaceName</key>
 	<string>sRGB</string>
 	<key>semanticClass</key>
-	<string>theme.light.eva</string>
+	<string>theme.light.eva.bold</string>
 	<key>author</key>
-	<string>wei-chih</string>
-	<key>comment</key>
-	<string>complete at variables</string>
+	<string>Wei-Chih, Huang</string>
 </dict>
 </plist>
