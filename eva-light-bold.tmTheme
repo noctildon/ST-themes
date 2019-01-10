@@ -43,7 +43,7 @@
 		<key>name</key>
 		<string>variable.parameter</string>
 		<key>scope</key>
-		<string>variable.parameter,token.variable.parameter,variable.other.jsdoc,variable.language.arguments,function.parameter,entity.name.variable.parameter,meta.function.c, punctuation.vararg-ellipses,variable.other.block.ruby, meta.arguments</string>
+		<string>variable.parameter,token.variable.parameter,variable.other.jsdoc,variable.language.arguments,function.parameter,entity.name.variable.parameter,meta.function.c, meta.function-call.c++, punctuation.vararg-ellipses,variable.other.block.ruby, meta.arguments</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -99,7 +99,7 @@
 		<key>name</key>
 		<string>Variable;变量</string>
 		<key>scope</key>
-		<string>variable.other, support.variable,meta.definition.variable,variable.other.object,variable.other.readwrite, entity.name.type.enum,meta.method.body,entity.name.variable,variable.other.object.property.cs,meta.block.c,source.c,source.cpp,source.ruby,source.go,meta.class-struct-block,source.dart,source.python,meta.item-access.python,meta.function-call.arguments.python,meta.item-access.arguments.python, variable.parameter.keyframe-list.css, meta.property-value.css, source.css.less, variable, variable.other.readwrite.js,meta.qualified-name.python</string>
+		<string>variable.other, support.variable,meta.definition.variable,variable.other.object,variable.other.readwrite, entity.name.type.enum,meta.method.body,meta.method.body.java,meta.parens.java,entity.name.constant.java,meta.method.body.cs,entity.name.variable,variable.other.object.property.cs,meta.block.c,meta.group.c,meta.function-call.c,source.c,source.cpp,source.ruby,meta.field.java,meta.assignment.rhs.java,source.go,meta.class-struct-block,source.dart,source.python,meta.item-access.python,meta.function-call.arguments.python,meta.item-access.arguments.python, variable.parameter.keyframe-list.css, meta.property-value.css, source.css.less, variable, variable.other.readwrite.js,meta.qualified-name.python</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -239,7 +239,7 @@
 		<key>name</key>
 		<string>Function Call Variable;用户自定义的变量属性(发现innerHTML也被包含在内, 所以这条暂不能区分用户自定义 与 语言内置对象属性)</string>
 		<key>scope</key>
-		<string>variable.other.object.property,variable.other.constant.property</string>
+		<string>variable.other.object.property,variable.other.constant.property, variable.other.property.ts</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -351,11 +351,11 @@
 		<key>name</key>
 		<string>Punctuation Definition Comment;注释的定义符号 // /* */</string>
 		<key>scope</key>
-		<string>punctuation.definition.comment</string>
+		<string>punctuation.definition.comment,text.html.javadoc</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
-			<string></string>
+			<string>italic</string>
 			<key>foreground</key>
 			<string>#A9A9AA</string>
 		</dict>
@@ -463,7 +463,7 @@
 		<key>name</key>
 		<string>Functions,pthread;单独的函数,C++线程</string>
 		<key>scope</key>
-		<string>entity.name.function,support.type.pthread,variable.annotation.function.python,meta.annotation.python,punctuation.definition.annotation.python,variable.function.js,support.function.js</string>
+		<string>entity.name.function,support.type.pthread,variable.function.c,variable.function.c++,variable.function.cs, variable.other.readwrite.member.c++, variable.function.java,variable.annotation.function.python,meta.annotation.python,punctuation.definition.annotation.python,variable.function.js,support.function.js</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -729,7 +729,7 @@
 		<key>name</key>
 		<string>support type ts;ts里默认数据类型;自定义数据类型</string>
 		<key>scope</key>
-		<string>support.type.primitive,support.type.builtin,entity.name.type.instance,entity.name.type.alias.ts,storage.type.string,storage.type.numeric,storage.type.boolean,storage.type.primitive,meta.type.annotation,meta.method.identifier,keyword.type,storage.type.cs,entity.name.type.type-parameter,meta.type.parameters,storage.type.generic,storage.type.object.array,storage.type.java,storage.type.c,support.class.dart,meta.declaration.dart, meta.type.declaration, meta.block.ts, support.type.graphql</string>
+		<string>support.type.primitive,support.type.builtin,entity.name.type.instance,entity.name.type.alias.ts,storage.type.string,storage.type.numeric,storage.type.boolean,storage.type.primitive,meta.type.annotation,meta.method.identifier,keyword.type,storage.type.cs,entity.name.type.type-parameter,meta.type.parameters,storage.type.generic,storage.type.object.array,storage.type.java,storage.type.void.java,support.class.java,storage.type.c,support.class.dart,meta.declaration.dart, meta.type.declaration, meta.block.ts, support.type.graphql</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -1301,7 +1301,7 @@
 		<key>name</key>
 		<string>js ts this super, python self</string>
 		<key>scope</key>
-		<string>variable.language.python</string>
+		<string>variable.language.python,variable.language.java</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
@@ -1581,7 +1581,7 @@
 		<key>name</key>
 		<string>Tex: {var}</string>
 		<key>scope</key>
-		<string>meta.preamble.usepackage.latex, meta.group.bracket.latex</string>
+		<string>meta.preamble.usepackage.latex, variable.parameter.function.latex</string>
 		<key>settings</key>
 		<dict>
 			<key>fontStyle</key>
